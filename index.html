@@ -24,8 +24,7 @@
 
     <script async custom-element="amp-soundcloud" src="https://cdn.ampproject.org/v0/amp-soundcloud-0.1.js"></script>
 
-
-
+  
     <script async custom-element="amp-social-share"
         src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 
@@ -548,13 +547,8 @@ line-height: 0.5;     color: #ed3833;
         .infobox-data {
             display: flex;
             align-items: center;
-            margin-top: 8px;
-            margin-bottom: 1em;
-            font-weight: 400;
-            line-height: 1.33;
-            font-size: 1.04167em;
-            color: #70757a;
-            font-family: Roboto, Arial, sans-serif;
+            margin-top: 1.5rem;
+    
 
         }
 
@@ -567,8 +561,7 @@ line-height: 0.5;     color: #ed3833;
 
 
         .infobox-data svg {
-            padding-left: 6px;
-            padding-right: 4px;
+            padding-right: 0.75rem;
         }
 
 
@@ -782,8 +775,8 @@ footer a {
 </head>
 
 <body>
-    <amp-story standalone title="UK Bass Scene" publisher="YODJ" publisher-logo-src="https://example.com/logo/1x1.png"
-        poster-portrait-src="https://example.com/my-story/poster/3x4.jpg">
+    <amp-story id="bassscene" standalone title="UK Bass Scene" publisher="YODJ" publisher-logo-src="https://example.com/logo/1x1.png"
+        poster-portrait-src="https://example.com/my-story/poster/3x4.jpg" >
 
 
 
@@ -935,7 +928,27 @@ white-space: nowrap; font-weight: 600;">Learn more
                             </div>
                         </div>
 
+                        <div class="infobox-data">
 
+                            <svg role="img" viewBox="0 0 24 24" width="28" height="28" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <title>Spotify</title>
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                                </path>
+                            </svg>
+                            <small> 
+                        
+                                
+                                28.2 monthly listeners
+                              
+
+                                <br>
+                               </small>
+
+
+
+
+
+                        </div>
 
 
 
@@ -1127,6 +1140,8 @@ white-space: nowrap; font-weight: 600;">Learn more
 
         <amp-story-page id="page-zero">
 
+
+
             <amp-story-grid-layer class="video container" template="fill">
 
                 <amp-video autoplay loop width="720" height="1280" poster="assets/images/dj.png" layout="fill"
@@ -1167,6 +1182,8 @@ white-space: nowrap; font-weight: 600;">Learn more
 
 
             <amp-story-grid-layer template="vertical">
+
+               
 
                 <figure style="    padding-top: 15%;
                 padding-left: 48%;
@@ -1225,7 +1242,27 @@ white-space: nowrap; font-weight: 600;">Learn more
                         </div>
 
 
+                        <div class="infobox-data">
 
+                            <svg role="img" viewBox="0 0 24 24" width="28" height="28" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <title>Spotify</title>
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                                </path>
+                            </svg>
+                            <small> 
+                        
+                                
+                                28.2 monthly listeners
+                              
+
+                                <br>
+                               </small>
+
+
+
+
+
+                        </div>
 
 
                     </div>
@@ -1503,7 +1540,27 @@ white-space: nowrap; font-weight: 600;">Learn more
                             </div>
                         </div>
 
+                        <div class="infobox-data">
 
+                            <svg role="img" viewBox="0 0 24 24" width="28" height="28" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <title>Spotify</title>
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z">
+                                </path>
+                            </svg>
+                            <small> 
+                        
+                                
+                                184.2K monthly listeners
+                              
+
+                                <br>
+                               </small>
+
+
+
+
+
+                        </div>
 
 
                     </div>
@@ -1984,7 +2041,7 @@ white-space: nowrap; font-weight: 600;">Learn more
 
 
             <amp-story-page-attachment layout="nodisplay"  cta-text="Watch the whole episode "
-            cta-image-2="assets/images/icons/sammy.jpg"  cta-image="assets/images/icons/ytshort.webp"  class="attachment;" theme=" dark">
+            cta-image-2="assets/images/icons/sammy.jpg"  cta-image="assets/images/icons/ytshort--circle.png"  theme="dark" class="attachment;" >
 
 
 
@@ -2136,15 +2193,14 @@ white-space: nowrap; font-weight: 600;">Learn more
                 <div class="yt-embed-holder" style="    padding-right: 1rem;
                 padding-left: 1rem;
                 background-color: rgb(227, 225, 220); padding-bottom: 3rem;">
-                    <iframe width="100%" height="720"
-                        src="https://www.youtube.com/embed/Fhn6zSvr_ug?modestbranding=1&autohide=1&showinfo=0&controls=0"
-                        frameborder="0" allowfullscreen "
-           title=" 4 Biggest Bangers From Sammy Virji" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                   
 
+                        <amp-youtube width="720" height="1280" layout="responsive" data-videoid="Fhn6zSvr_ug">
+                        </amp-youtube>
+                        
 
-
+                       
+                        
 
 
                 </div>
@@ -2266,7 +2322,6 @@ white-space: nowrap; font-weight: 600;">Learn more
                 <div class="caption-top" animate-in="fly-in-top" animate-in-duration="1s">
 
                     <h3>Artist focus</h3>
-
 
                 </div>
 
