@@ -763,23 +763,24 @@ footer a {
     border-top-right-radius: 0.35rem;
     border-bottom-right-radius: 0.35rem;
     margin: 33% 0;
-    padding: 3px 0px 3px 0;
+   
     max-width: 300px;
   background-color: white;
   color: black;   position: relative;
-  height: 7rem;
+  height: 6.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 
    
 }
 .comment p{
-    padding: 1.5rem 1rem 0 1rem;
-    font-size: 0.75rem;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 12px;
   letter-spacing: -.018em;
   line-height: 125%;
   color: #555;
+  font-weight:400;
  
 
 }
@@ -796,9 +797,9 @@ footer a {
     margin: 0 auto;
     width: 0;
     height: 0;
-    border-top: 25px solid #FFF;
+    border-top: 15px solid #FFF;
     
-    border-right: 25px solid transparent;
+    border-right: 15px solid transparent;
     margin-top: 6.5rem;
     margin-left: 0;
 
@@ -812,6 +813,7 @@ footer a {
   display: flex;
   align-items: center;
   max-height: 2rem;
+
   
 
 }
@@ -826,7 +828,7 @@ footer a {
 
   .comment--body span {
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   line-height: 125%;
@@ -978,12 +980,12 @@ footer a {
 
             <amp-story-grid-layer template="vertical">
 
-                <figure style="     padding-bottom: 25%;
+                <figure style="     padding-bottom: 30%;
 padding-left: 43%;
 position: absolute;
 bottom: 0;">
-                    <amp-img src="assets/images/arrow.gif" width="160" height="160" layout="fixed"
-                        style="transform: rotate(90deg);">
+                    <amp-img src="assets/images/hand.png" width="242" height="126" layout="responsive"
+                        style="transform: rotate(90deg); max-width: 80px;">
                     </amp-img>
 
 
@@ -991,18 +993,7 @@ bottom: 0;">
                 </figure>
 
 
-                <div animate-in="pulse" animate-in-duration="3s" style="font-family: 'Caveat', sans-serif;
-         color: white;     transform: rotate(-61deg);
-         left: 155px;
-         bottom: 245px;
-    position: absolute;     
-    color: #d59b39;
-    font-size: 28px;
-    clear: both; 
-    
-    overflow: hidden; 
-white-space: nowrap; font-weight: 600;">Learn more
-                </div>
+      
 
             </amp-story-grid-layer>
 
@@ -1228,9 +1219,7 @@ white-space: nowrap; font-weight: 600;">Learn more
 
             </amp-story-grid-layer>
 
-            <amp-story-grid-layer template="vertical">
-                <div class="logo"></div>
-            </amp-story-grid-layer>
+          
 
 
             <amp-story-grid-layer template="vertical" class="no-gaps">
@@ -1238,7 +1227,7 @@ white-space: nowrap; font-weight: 600;">Learn more
             
 
                     <div class="comment">
-                        <p>this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph  </p>
+                        <p>this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is 💗 💗a paragraph  </p>
                        
 
                         <div class="comment--body">
@@ -1272,12 +1261,7 @@ white-space: nowrap; font-weight: 600;">Learn more
 
                 </div>
 
-                <div class="caption-top" animate-in="fly-in-top" animate-in-duration="1s">
-
-                    <h3>Artist focus</h3>
-
-
-                </div>
+               
 
 
             </amp-story-grid-layer>
@@ -1497,23 +1481,31 @@ white-space: nowrap; font-weight: 600;">Learn more
 
         <!---- Godzilla Page-->
 
-        <amp-story-page id="page-zero">
+        <amp-story-page id="page-ad">
 
             <amp-story-grid-layer class="container" template="fill">
 
-                <amp-img src="assets/images/godzilla.webp" width="720" height="1280" layout="responsive">
+                <amp-img src="assets/images/PUMA_AD.jpg" width="720" height="1280" layout="responsive">
                 </amp-img>
 
             </amp-story-grid-layer>
 
             <amp-story-grid-layer template="vertical">
-                <div class="logo"></div>
+                <div class="ad" style="position: absolute;
+                z-index: 9999;
+                top: 3%;
+                left: 4%;">Ad</div>
             </amp-story-grid-layer>
 
 
 
 
 
+            <amp-story-page-outlink layout="nodisplay" theme="custom"
+            cta-accent-element="background"
+            cta-accent-color="#F8D402"   >
+                <a href="https://www.google.com" title="Link Description">Advert</a>
+            </amp-story-page-outlink>
 
 
 
@@ -1860,7 +1852,14 @@ border-radius: 50%; transition: .6s;
             </amp-story-grid-layer>
 
             <amp-story-grid-layer template="vertical">
-                <div class="logo"></div>
+                <div class="logou" style="position: absolute;
+                z-index: 9999;
+                top: 3%;
+                left: 4%;">
+                    <amp-img src="assets/images/VIBE.png" width="120px" height="120px" layout="fixed">
+                    </amp-img>
+                   
+                </div>
             </amp-story-grid-layer>
 
             <amp-story-grid-layer template="vertical" style="align-content:end; ">
@@ -1876,12 +1875,7 @@ border-radius: 50%; transition: .6s;
 
                 </div>
 
-                <div class="caption-top" animate-in="fly-in-top" animate-in-duration="1s">
-
-                    <h3>Artist focus</h3>
-
-
-                </div>
+          
 
 
             </amp-story-grid-layer>
@@ -2288,11 +2282,26 @@ border-radius: 50%; transition: .6s;
                 background-color: rgb(227, 225, 220); padding-bottom: 3rem;">
                    
 
-                        <amp-youtube width="720" height="1280" layout="responsive" data-videoid="Fhn6zSvr_ug">
+                        <amp-youtube width="9" height="16" layout="responsive" data-videoid="Fhn6zSvr_ug">
+                            <a placeholder href="https://www.youtube.com/watch?v=Fhn6zSvr_ug">
+                                <amp-img src="https://i.ytimg.com/vi/Fhn6zSvr_ug/hqdefault.jpg" layout="fill" object-fit="cover" >
+                                 
+                                </amp-img>
+                            </a>
                         </amp-youtube>
                         
 
-                       
+                        <amp-youtube data-videoid="gYJ03GyrSrM" layout="responsive" width="16" height="9" title="Introducing How to AMP">
+                            <a placeholder href="https://www.youtube.com/watch?v=gYJ03GyrSrM">
+                                <amp-img src="https://i.ytimg.com/vi/gYJ03GyrSrM/hqdefault.jpg" layout="fill" object-fit="cover" alt="Introducing How to AMP" class="amp-wp-enforced-sizes">
+                                 
+                                </amp-img>
+                            </a>
+                        </amp-youtube>
+
+
+                        
+                        
                         
 
 
@@ -2454,7 +2463,7 @@ border-radius: 50%; transition: .6s;
                     </div>
 
                
-                <div class="attachment_bg-grey">
+                <div class="attachment_bg-grey" style="padding-bottom: 0;">
                     <div class="attachment_supporting-text pr1 pl1 pb1">
 
 
@@ -2597,11 +2606,11 @@ border-radius: 50%; transition: .6s;
 
 
                 <div class="div-block-180" style="background-color: #fff;
-                        background-image: url(https://assets-global.website-files.com/61f2936079ce67606fdade16/6571c3b7e2cb4add98083c5e_div.framer-13tqlde.png);
+                        background-image: url(/assets/images/banner78.jpeg);
                         background-position: 50%;
                         background-size: cover;
                         border: 1px solid rgba(0,0,0,.1);
-                        border-radius: 12px;
+                        
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
