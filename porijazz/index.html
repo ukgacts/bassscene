@@ -250,7 +250,7 @@
 
         }
 
-        .container {
+        .center {
             justify-content: center;
             align-content: center;
         }
@@ -968,34 +968,45 @@ amp-story-page-attachment a {
         .outer {
 
 
-            height: 365px;
-            /* adjust to your needs */
-            display: flex;
-            flex-wrap: wrap;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
+            height: 50%;
+            position: relative;
+     width: 100%;
+
+            
         }
 
 
 
-        .outer amp-img {
+        amp-img.cover img {
+    object-fit: cover;
+  }
 
-            flex-basis: 0;
-            flex-grow: 1;
-        }
 
 
         /* Halfscreen--end */
 
 
+    /* Bookend */
+
+.paragraph-container {
+        flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-top: 16px;
+                display: flex; 
+}
 
 
 
+.paragraph-container p {
+    font-size: 0.75rem;
+                color: white;
+                text-align: center;
+  line-height: 140%;
+}
 
 
-
-
+  /* Bookend--end */
 
 
 
@@ -1455,7 +1466,7 @@ amp-story-page-attachment a {
 
 
 
-            <amp-story-grid-layer class="badge" template="vertical" style="align-content:center; padding: 0; ">
+            <amp-story-grid-layer class="badge" template="vertical" style="align-content:center; padding: 3%; ">
 
                 <amp-img width="120px" height="50px" style="max-width: 80%; height: auto; margin-bottom: 18%;"
                     layout="responsive" src="assets/images/accomodation-caption.png">
@@ -1822,21 +1833,24 @@ amp-story-page-attachment a {
 
 
 
-            <amp-story-grid-layer template="vertical" style="padding: 0; background: white;  align-content:center;">
+            <amp-story-grid-layer template="fill" style="padding: 0; background: white; ">
+
+                <div class="two-images--wrapper"> 
                 <div class="outer">
 
 
-                    <amp-img width="627" height="640" layout="responsive" src="assets/images/path2.webp">
+                    <amp-img class="cover" width="720" height="640"   layout="fill" src="assets/images/path2.webp">
                     </amp-img>
 
                 </div>
 
                 <div class="outer">
 
-                    <amp-img width="627" height="640" layout="responsive" src="assets/images/path1.webp">
+                    <amp-img class="cover" width="720" height="640vh" layout="fill" src="assets/images/path1.webp">
                     </amp-img>
                 </div>
 
+            </div>
             </amp-story-grid-layer>
 
 
@@ -1958,12 +1972,14 @@ amp-story-page-attachment a {
         <amp-story-page id="page-shosh">
 
 
+           
+            <amp-story-grid-layer template="fill" style="padding: 0;  ">
 
-            <amp-story-grid-layer template="vertical" style="padding: 0; background: white;  align-content:center;">
+                <div class="two-images--wrapper"> 
                 <div class="outer">
 
 
-                    <amp-img width="720" height="640" layout="responsive" src="assets/images/timetable.webp">
+                    <amp-img class="cover" width="720" height="640" layout="fill" src="assets/images/timetable.webp">
                     </amp-img>
 
                 </div>
@@ -1973,9 +1989,15 @@ amp-story-page-attachment a {
 
                 <div class="outer">
 
-                    <amp-img width="720" height="640" layout="responsive" src="assets/images/bus.webp">
+                    <amp-img  class="cover" width="720" height="640" layout="fill" src="assets/images/bus.webp">
                     </amp-img>
                 </div>
+
+
+            </div>
+        
+                   
+
 
             </amp-story-grid-layer>
 
@@ -2051,7 +2073,7 @@ amp-story-page-attachment a {
 
 
 
-            <amp-story-grid-layer class="badge" template="vertical" style="align-content:center; padding: 0; ">
+            <amp-story-grid-layer class="badge" template="vertical" style="align-content:center; padding: 3%; ">
                 <div class="immg-wrapper">
                     <amp-img width="120px" height="50px" style="max-width: 50%; height: auto;  position: relative;
                  " layout="responsive" src="assets/images/tips.png">
@@ -2100,20 +2122,31 @@ amp-story-page-attachment a {
 
         <amp-story-page id="page-shosh">
 
-            <amp-story-grid-layer template="vertical" style="padding: 0; background: white;  align-content:center;">
+                 
+            <amp-story-grid-layer template="fill" style="padding: 0;  ">
+            
+
+                <div class="two-images--wrapper"> 
                 <div class="outer">
 
 
-                    <amp-img width="627" height="640" layout="responsive" src="assets/images/weather2.jpg">
+                    <amp-img class="cover" width="720" height="640" layout="fill" src="assets/images/weather2.jpg">
                     </amp-img>
 
                 </div>
 
                 <div class="outer">
 
-                    <amp-img width="627" height="640" layout="responsive" src="assets/images/weather.webp">
+                    <amp-img class="cover" width="720" height="640" layout="fill"src="assets/images/weather.webp">
                     </amp-img>
                 </div>
+
+
+            </div>
+
+
+
+
 
             </amp-story-grid-layer>
 
@@ -2327,17 +2360,24 @@ amp-story-page-attachment a {
 
 
 
-            <amp-story-grid-layer class="container" template="thirds">
+            <amp-story-grid-layer  template="thirds">
 
 
-                <div class="content" grid-area="lower-third" style="flex-direction: column;
-                align-items: center;
-                width: 100%;
-                
-                display: flex; font-size: 0.875rem;
-  font-weight: 700;
-  text-transform: uppercase;">Promo only <br>
-                    <small>Hand made by Yo Deejay </small>
+                <div class="paragraph-container" grid-area="lower-third" >
+                    
+                    <p>  
+                   <strong>  Promo only </strong> 
+                   
+                    
+                    
+                    
+                    <br>
+                    Hand made for Bassscene Magazine
+<br> 
+                    Art by D. Holmes
+
+
+</p>
                 </div>
 
             </amp-story-grid-layer>
